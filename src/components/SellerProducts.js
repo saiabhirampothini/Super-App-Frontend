@@ -3,7 +3,7 @@ import axios from "axios";
 import Loader from "./Loader";
 import { Carousel, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import "../styles/ProductsDashboard.css"; // Import custom styles
 import { getProductBySellerRoute } from "../utils/APIRoutes";
 import { deleteProductRoute } from "../utils/APIRoutes";
@@ -11,7 +11,7 @@ import { resumeProductRoute } from "../utils/APIRoutes";
 import { updateStocksRoute } from "../utils/APIRoutes";
 
 const SellerProducts = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -20,12 +20,9 @@ const SellerProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(
-          getProductBySellerRoute,
-          {
-            withCredentials: true,
-          }
-        );
+        const response = await axios.get(getProductBySellerRoute, {
+          withCredentials: true,
+        });
         setProducts(response.data.data);
         setStocks(response.data.data.NO_OF_STOCKS);
       } catch (error) {
@@ -133,7 +130,7 @@ const SellerProducts = () => {
         <div className="row">
           <h1 className="h1 text-center mb-4">Your Products</h1>
           {products.map((product, index) => (
-            <div key={index} className="col-lg-12 col-md-12 col-sm-12 mb-4" onClick={()=>{handleCardClick(product.PRODUCT_ID)}}>
+            <div key={index} className="col-lg-12 col-md-12 col-sm-12 mb-4">
               <div className="product-card card h-100 shadow-sm">
                 <div className="row no-gutters">
                   <div className="col-md-4">
@@ -151,7 +148,12 @@ const SellerProducts = () => {
                   </div>
                   <div className="col-md-8">
                     <div className="card-body product-info">
-                      <div className="d-flex">
+                      <div
+                        className="d-flex"
+                        onClick={() => {
+                          handleCardClick(product.PRODUCT_ID);
+                        }}
+                      >
                         <h1 className="h2">
                           <strong>{product.BRAND_NAME}</strong>
                         </h1>
