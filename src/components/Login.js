@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { oauthRoute } from "../utils/APIRoutes";
 import { loginRoute } from "../utils/APIRoutes";
-import '../styles/Login.css';
+import "../styles/Login.css";
 
 const Login = () => {
   const Navigate = useNavigate();
@@ -90,13 +90,16 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <div className="input-group-append">
-                <span className="input-group-text" onClick={togglePasswordVisibility}>
+              <div className="input-group-append p-2">
+                <span
+                  className="input-group-text"
+                  onClick={togglePasswordVisibility}
+                >
                   <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
                 </span>
               </div>
             </div>
-          
+
             {/* <small className="form-text text-right">
               <a href="#">Forgot?</a>
             </small> */}
