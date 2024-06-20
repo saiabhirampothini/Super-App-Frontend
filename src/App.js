@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./contexts/authContext";
+import Home from "./components/Home";
 import Login from "./components/Login";
 import DashBoard from "./components/DashBoard";
 import Chat from "./components/Chat";
@@ -28,6 +29,14 @@ function App() {
                 <ProtectedRoute>
                   <DashBoard />
                 </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/"
+              element={
+                <UnprotectedRoute>
+                  <Home />
+                </UnprotectedRoute>
               }
             />
             <Route
