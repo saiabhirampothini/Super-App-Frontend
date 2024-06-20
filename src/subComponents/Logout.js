@@ -21,7 +21,7 @@ export default function Logout() {
     );
 
     if (data.status === 200) {
-      navigate("/dashboard");
+      navigate("/dashBoard");
     }
   };
 

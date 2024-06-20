@@ -481,7 +481,7 @@ const Cart = () => {
             { withCredentials: true }
           );
           console.log(response);
-          // window.location.href = response.data.url;
+          window.location.href = response.data.url;
           // window.open(response.data.url, "_blank");
         } catch (err) {
           console.log(err);
