@@ -384,6 +384,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { Carousel, Button, Modal, Form } from "react-bootstrap";
+import NavECommerce from "./NavE-Commerce";
 import "../styles/productPage.css";
 import StarRating from "./starRating";
 import StarRatingInput from "./starRatingInput";
@@ -669,6 +670,7 @@ const ProductPage = () => {
 
   return (
     <div className="productPage">
+      <NavECommerce />
       <main className="dashboard-content container mt-3">
         <div className="row">
           {product.map((product, index) => (
