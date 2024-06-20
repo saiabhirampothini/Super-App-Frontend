@@ -106,7 +106,6 @@
 //     fetchOrders();
 //   }, []);
 
-
 //   const handleAddToCart = async (e) => {
 //     e.preventDefault();
 //     try{
@@ -147,7 +146,6 @@
 //       console.log(err.response.data.msg);
 //       window.alert(err.response.data.msg);
 //     }
-
 
 //   };
 
@@ -265,7 +263,7 @@
 //                       <div className="flexbox-ratings d-flex col">
 //                         {reviewMeta && (
 //                           <StarRating rating={reviewMeta.avg_rating} />
-//                         )} 
+//                         )}
 //                       </div>
 //                       <div className="ratings-para"><h6>{reviewMeta.noofreviews} Reviews & Ratings</h6></div>
 //                       <div className="price-wishlist d-flex justify-content-between align-items-center">
@@ -543,7 +541,9 @@ const ProductPage = () => {
       }
     } catch (err) {
       console.log(err.response.data.msg);
-      window.alert(err.response.data.msg);
+      window.alert(
+        err.response.data.msg + " /Product is already in the wishlist"
+      );
     }
   };
 
