@@ -1,5 +1,5 @@
 let SERVER_HOST_ADDRESS = "https://super-app-backend.vercel.app";
-let SOCKET_HOST_ADDRESS=  "https://super-app-backend-sockets.vercel.app";
+let SOCKET_HOST_ADDRESS = "https://super-app-backend-sockets.vercel.app";
 //Login.js
 export const loginRoute = `${SERVER_HOST_ADDRESS}/api/auth`;
 export const oauthRoute = `${SERVER_HOST_ADDRESS}/api/oauth/auth/google`;
@@ -48,7 +48,7 @@ export const postProductsRoute = `${SERVER_HOST_ADDRESS}/api/products/add-produc
 
 //ProductPage.js
 export const getReviewsAdditionalRoute = `${SERVER_HOST_ADDRESS}/api/reviews/get-product-reviews-additional`;
-export const getProductReviewsRoute = `${SERVER_HOST_ADDRESS}/api/reviews//get-product-reviews`; /** */
+export const getProductReviewsRoute = `${SERVER_HOST_ADDRESS}/api/reviews/get-product-reviews`; /** */
 export const fetchOrdersRoute = `${SERVER_HOST_ADDRESS}/api/orders/get-seller-orders-for-product`;
 export const addToWishListRoute = `${SERVER_HOST_ADDRESS}/api/wishlist/add-to-wishlist`;
 export const addReviewsRoute = `${SERVER_HOST_ADDRESS}/api/reviews/add-reviews`;
@@ -67,12 +67,10 @@ export const addPhoneRoute = `${SERVER_HOST_ADDRESS}/api/verify-phone/add-phone`
 export const getProductBySellerRoute = `${SERVER_HOST_ADDRESS}/api/products/get-product-by-seller`;
 export const deleteProductRoute = `${SERVER_HOST_ADDRESS}/api/products/delete-product`;
 export const resumeProductRoute = `${SERVER_HOST_ADDRESS}/api/products/resume-product`;
-export const updateStocksRoute = `${SERVER_HOST_ADDRESS}/api/products//update-stocks`;
+export const updateStocksRoute = `${SERVER_HOST_ADDRESS}/api/products/update-stocks`;
 
 //Wishlist.js
 export const getWishListRoute = `${SERVER_HOST_ADDRESS}/api/wishlist/get-my-wishlist`;
 
 //protect.js
-export const checkRoute=`${SERVER_HOST_ADDRESS}/api/auth/check`;
-
-
+export const checkRoute = `${SERVER_HOST_ADDRESS}/api/auth/check`;
