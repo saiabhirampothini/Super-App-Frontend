@@ -1,0 +1,49 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Sans-serif';
+  }
+  
+  .custom-card {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-left {
+    flex: 1;
+  }
+  
+  .card-right {
+    flex: 2;
+    text-align: center;
+    padding-left: 20px;
+  }
+  
+  .card-img-left {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .card-text {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+  
+  .card-label {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  

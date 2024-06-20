@@ -1,0 +1,27 @@
+
+  
+  .password-group {
+    position: relative;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group-append {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group-text {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .input-group-text svg {
+    width: 20px;
+    height: 20px;
+  }
+  

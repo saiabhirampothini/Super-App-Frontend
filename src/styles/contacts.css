@@ -1,0 +1,133 @@
+.Container-Contacts {
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #222; /* Dark background color */
+  color: #ffffff; /* Light text color */
+  border: 1px solid #3c3c3e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Container-Contacts .contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+}
+
+.Container-Contacts .search-box {
+  padding: 1rem;
+  background-color: #333;
+}
+
+.Container-Contacts .search-box input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #555;
+  border-radius: 0.25rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.Container-Contacts .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.Container-Contacts .contacts::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+.Container-Contacts .contacts::-webkit-scrollbar-thumb {
+  width: 0.1rem;
+  border-radius: 1rem;
+}
+
+.Container-Contacts .contact {
+  background-color: #222; /* Slightly lighter background for contacts */
+  min-height: 3rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+.Container-Contacts .contact:hover {
+  background-color: #42454c; /* Darker background on hover */
+  border-radius: 2rem;
+}
+
+.Container-Contacts .contact .avatar img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%; /* Rounded avatar */
+}
+
+.Container-Contacts .contact .avatar svg {
+  color: #a0a0a0;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.Container-Contacts .contact .username h3 {
+  color: #ffffff; /* Light text color */
+}
+
+.Container-Contacts .contact.selected {
+  background-color: #4d4d4f; /* Slightly lighter background for selected contact */
+  border-radius: 2rem;
+}
+
+.Container-Contacts .current-user {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.Container-Contacts .current-user .avatar img {
+  height: 3rem;
+  max-width: 100%;
+  border-radius: 50%; /* Rounded avatar */
+}
+
+.Container-Contacts .current-user .avatar svg {
+  color: #a0a0a0;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.Container-Contacts .current-user .username h2 {
+  color: #ffffff; /* Light text color */
+}
+
+.Container-Contacts .current-user button {
+  border: none;
+  background: none;
+  position: relative;
+  color: #ffffff; /* Light text color */
+}
+
+.Container-Contacts .no-contacts {
+  color: #bbb;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+  .Container-Contacts .current-user {
+    gap: 0.5rem;
+  }
+
+  .Container-Contacts .current-user .username h2 {
+    font-size: 1rem;
+  }
+}

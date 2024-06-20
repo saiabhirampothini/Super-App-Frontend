@@ -1,0 +1,160 @@
+ body {
+  background-color: #f5f5f5;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.register-form {
+  width: 600px;
+  padding: 40px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.register-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.register-button {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 15px;
+  margin-top: 9px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #333;
+}
+
+.register-sidebar {
+  width: 250px;
+  margin-right: 50px;
+  position: fixed;
+  left: 20px;
+}
+
+.register-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.register-sidebar ul li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.register-sidebar ul li.active {
+  background-color: #ce0606;
+  color: white;
+}
+
+.register-sidebar ul li:not(.active) {
+  background-color: #fff;
+  color: #524f4f;
+}
+
+.register-sidebar ul li:hover {
+  background-color: #ddd;
+} 
+
+.register-heading {
+  text-align: center;
+}
+
+
+
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group-append {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+
+.form-section .input-group {
+  display: flex;
+  align-items: center;
+  position: relative; 
+}
+
+.form-section .input-group .register-input {
+  width: calc(100% - 40px); 
+  padding-right: 40px; 
+}
+
+.form-section .input-group-append {
+  position: absolute; 
+  right: 10px; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%; 
+  padding: 0 5px; 
+  .form-section .input-group {
+  display: flex;
+  align-items: center;
+  position: relative; 
+}
+
+.form-section .input-group .register-input {
+  width: calc(100% - 40px); 
+  padding-right: 40px; 
+}
+
+  .form-section .input-group-append {
+    position: absolute; /* Positioned absolutely to fit within the input */
+    right: 10px; /* Adjusted position to fit within the input */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%; /* Ensures the icon is vertically centered */
+    padding: 0 5px; /* Added padding for better alignment */
+    
+  }}
+
+.input-group-append {
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.input-group-append svg {
+  font-size: 1rem; /* Adjust the font size for the eye icon */
+  margin-top: -10px; /* Move the icon upwards */
+}

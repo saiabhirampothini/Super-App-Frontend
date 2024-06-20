@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem; /* Reduced padding for a thinner navbar */
+  background-color: #333;
+  color: white;
+  height: 50px; /* Set a fixed height to make it thinner */
+}
+
+.navbar__logo {
+  font-size: 2rem; /* Increased font size */
+  font-family: 'Arial', sans-serif; /* Changed font family */
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar__links li {
+  margin-right: 2rem;
+  display: inline;
+}
+
+.navbar__links a {
+  font-size:larger ;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-logout {
+  background-color: #dc3545; /* Red background for logout button */
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem; /* Reduced padding for a thinner button */
+  border-radius: 4px;
+  cursor: pointer;
+}
