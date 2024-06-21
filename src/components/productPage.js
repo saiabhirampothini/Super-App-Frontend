@@ -493,10 +493,10 @@ const ProductPage = () => {
     };
 
     // fetchReviews();
-    fetchExtraMeta();
+    setTimeout(fetchExtraMeta(), 1000);
     fetchProduct();
     fetchOrders();
-    fetchReviews();
+    setTimeout(fetchReviews(), 1000);
   }, [productId]);
 
   const handleAddToCart = async (e) => {
