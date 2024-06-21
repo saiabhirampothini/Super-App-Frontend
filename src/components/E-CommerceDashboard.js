@@ -46,7 +46,7 @@ const ProductsDashboard = () => {
         });
         console.log(response.data.data);
         setProducts(response.data.data);
-        // fetchReviewsForProducts(response.data.data);
+        setTimeout(fetchReviewsForProducts(response.data.data), 1000);
       } catch (error) {
         setError(error.message);
       } finally {
@@ -55,7 +55,7 @@ const ProductsDashboard = () => {
     };
 
     fetchProducts();
-    fetchReviewsForProducts(products);
+    // fetchReviewsForProducts(products);
   }, []);
 
   const addToCart = async (productID) => {
