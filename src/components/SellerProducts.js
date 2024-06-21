@@ -159,12 +159,12 @@ const SellerProducts = () => {
                         </h1>
                         <h4 className="h2 ml-2">{product.MODEL}</h4>
                       </div>
-                      <div className="product-ratings">
+                      {/* <div className="product-ratings">
                         <span className="star-rating">
                           &#9733;&#9733;&#9733;&#9733;&#9734;
                         </span>
                         <span className="rating-count">(113)</span>
-                      </div>
+                      </div> */}
                       <p className="card-text product-price mt-3">
                         <strong> ₹ {product.PRICE}</strong>{" "}
                         {product.OLD_PRICE && (

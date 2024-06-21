@@ -492,10 +492,11 @@ const ProductPage = () => {
       }
     };
 
-    fetchReviews();
+    // fetchReviews();
     fetchExtraMeta();
     fetchProduct();
     fetchOrders();
+    fetchReviews();
   }, [productId]);
 
   const handleAddToCart = async (e) => {
