@@ -1,0 +1,41 @@
+.home-App {
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+}
+
+.home-container {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.home-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
